@@ -1,0 +1,81 @@
+.admin-container {
+  padding: 20px;
+  overflow-x: auto; /* Ensure the container can scroll horizontally */
+}
+
+h1 {
+  text-align: center;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th, .users-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.users-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+  background-color: #ddd;
+}
+
+.add-user-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 10px;
+  }
+
+  .users-table th, .users-table td {
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  .add-user-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 5px;
+  }
+
+  .users-table th, .users-table td {
+    padding: 2px;
+    font-size: 12px;
+  }
+
+  .add-user-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
